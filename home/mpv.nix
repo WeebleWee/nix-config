@@ -7,6 +7,7 @@
     scripts = with pkgs.mpvScripts; [
       modernz
       thumbfast
+      mpris
     ];
 
     config = {

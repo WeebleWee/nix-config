@@ -52,7 +52,6 @@
     jan
     fastfetch
     eilmeldung
-    mpvScripts.modernz
     vesktop
     vscodium
   ];
