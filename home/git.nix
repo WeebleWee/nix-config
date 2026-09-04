@@ -7,7 +7,7 @@
     settings = {
       user = {
         name = "Weeble";
-        email = "weeble69@protonmail.com"; # change me
+        email = "weeble69@protonmail.com";
       };
 
       init.defaultBranch = "main";
