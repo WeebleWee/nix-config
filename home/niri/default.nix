@@ -4,7 +4,7 @@
 {
   imports = [
     ./auto.nix
-    ./includes
+    ./includes.nix
     ./input.nix
     ./keybinds.nix
     ./layout.nix
