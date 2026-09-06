@@ -38,7 +38,7 @@
       gamut-mapping-mode = "perceptual";
 
       keep-open = true;
-      save-position-on-quit = true;
+      save-position-on-quit = false;
 
       watch-later-options-remove = [
         "sub-pos"
@@ -64,7 +64,7 @@
       language = "default";
       icon_theme = "material";
       icon_style = "mixed";
-      font = "mpv-osd-symbols";
+      font = "CozetteVector";
       layout = "default";
 
       idlescreen = "yes";

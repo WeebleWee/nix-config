@@ -3,8 +3,11 @@
 {
   #--------------- gtk and pc stuff---
   services.gvfs.enable = true; # trash, mtp, network mounts
-  services.tumbler.enable = true; # thumbnails
   services.udisks2.enable = true; # removable media
+  # services.tumbler dropped: it's a Thunar-era leftover. libfm-qt (pcmanfm-qt's
+  # backend) implements the GNOME thumbnailer spec itself, invoking
+  # .thumbnailer executables directly - confirmed via its thumbnailer.cpp,
+  # no tumbler/D-Bus reference anywhere in it.
 
   # --- OBS virtual camera -------------------------------------
   boot.extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];

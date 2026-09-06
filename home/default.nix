@@ -6,12 +6,14 @@
     ./terminal.nix
     ./git.nix
     ./gitea-runner.nix
-    ./rss.nix
     ./ssh.nix
     ./theming.nix
     ./monitoring.nix
     ./mpv.nix
     ./obs.nix
+    ./noctalia
+    ./umbriel
+    ./niri
   ];
 
   home.username = "weeble";
@@ -42,7 +44,7 @@
     tree-sitter
     nodejs_22
     luajit
-    kdePackages.gwenview
+    lxqt.lximage-qt
     tor-browser
     mullvad-browser
     telegram-desktop
@@ -51,9 +53,11 @@
     libreoffice-stable
     jan
     fastfetch
-    eilmeldung
     vesktop
     vscodium
+    newsflash
+    ffmpeg
+    exiftool
   ];
 
   programs.zen-browser = {

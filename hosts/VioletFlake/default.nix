@@ -15,17 +15,8 @@
     useOSProber = true;
     configurationLimit = 10;
   };
-  # Not in nixpkgs; sourced straight from pkgs/*.nix. Overlaying rather than
-  # calling callPackage at each use site so home/gtk.nix and the greeter's
-  # cursor block (both need retrosmart-cursor) and any Qt-side consumer of
-  # pixora-icons can all just reach them as pkgs.retrosmart-cursor /
-  # pkgs.pixora-icons.
-  nixpkgs.overlays = [
-    (final: prev: {
-      retrosmart-cursor = final.callPackage ../../pkgs/retrosmart-cursor.nix { };
-      pixora-icons = final.callPackage ../../pkgs/pixora-icons.nix { };
-    })
-  ];
+
+  boot.supportedFilesystems = [ "ntfs" ];
 
   # ----------------------------------------------------------------- nix ---
   nix.settings = {

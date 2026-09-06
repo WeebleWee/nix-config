@@ -7,12 +7,14 @@
 }:
 
 {
-  # ------------------------------------------------------- Noctalia v5 ---
   imports = [
     inputs.noctalia.nixosModules.default
     inputs.noctalia-greeter.nixosModules.default
     inputs.umbriel.nixosModules.default
+    inputs.niri.nixosModules.niri
   ];
+
+  # ------------------------------------------------------- Noctalia v5 ---
 
   programs.noctalia = {
     enable = true;
@@ -22,28 +24,33 @@
   # ---------------------------------------------------------- Umbriel ---
   programs.umbriel.enable = true;
 
-  # niri as a second session alongside Umbriel.
+  # ---------------------------------------------------------- Niri ---
+  niri-flake.cache.enable = true;
+
   programs.niri.enable = true;
+
+  programs.niri.package = pkgs.niri;
+
+  # Noctalia provides polkit
+  systemd.user.services.niri-flake-polkit.enable = false;
+
+  # ---------------------------------------------------------- Relevant packages ---
 
   environment.systemPackages = with pkgs; [
     wl-clipboard
     papirus-icon-theme
-    pixora-icons
-    kdePackages.breeze
-    kdePackages.breeze-icons
-    kdePackages.dolphin
-    kdePackages.kio-extras
-    kdePackages.kio-fuse
+    lxqt.pcmanfm-qt
     adwaita-icon-theme
-    kdePackages.qt6ct
+    qt6Packages.qt6ct
     brightnessctl
     playerctl
     libnotify
     grim
     slurp
     glib
-    kdePackages.ffmpegthumbs
-    kdePackages.ark
+    xarchiver
+    kdePackages.breeze
+    xwayland-satellite
   ];
 
   # ------------------------------------------------------------ login ---
@@ -52,12 +59,6 @@
     greeter-args = "";
 
     settings = {
-      cursor = {
-        theme = "Adwaita";
-        size = 24;
-        path = "${pkgs.adwaita-icon-theme}/share/icons";
-      };
-
       session.default = "Umbriel";
     };
   };

@@ -9,8 +9,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # No `follows` here: overriding inputs changes the derivation hash and
-    # you lose the noctalia.cachix.org binary cache.
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    niri-screenshare = {
+      url = "github:pantarune/niri-screenshare";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
 
     noctalia-greeter = {

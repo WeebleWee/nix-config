@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
+{ inputs, pkgs, ... }:
 
+let
+  niriScreenshare = inputs.niri-screenshare.packages.${pkgs.stdenv.hostPlatform.system}.default;
+in
 {
   # ---------------------------------------------------------- portals ---
   xdg.portal = {
@@ -7,7 +10,7 @@
     xdgOpenUsePortal = true;
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-gnome
+      niriScreenshare
     ];
 
     config.umbriel = {
@@ -17,9 +20,8 @@
     };
 
     config.niri = {
-      default = [ "gnome" "gtk" ];
-      "org.freedesktop.impl.portal.ScreenCast" = [ "gnome" ];
-      "org.freedesktop.impl.portal.Screenshot" = [ "gnome" ];
+      default = [ "gtk" ];
+      "org.freedesktop.impl.portal.ScreenCast" = [ "niri-screenshare" ];
       "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
       "org.freedesktop.impl.portal.Access" = [ "gtk" ];
     };

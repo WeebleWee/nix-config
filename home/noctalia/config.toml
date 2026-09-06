@@ -1,0 +1,612 @@
+[audio]
+enable_overdrive = true
+enable_sounds = true
+notification_sound = "/home/weeble/Music/noctalia/notification.wav"
+sound_volume = 0.99999997764825821
+volume_change_sound = "/home/weeble/Music/noctalia/volume.wav"
+
+[backdrop]
+blur_intensity = 0.029999999329447746
+enabled = false
+tint_intensity = 0.55000000000000004
+
+[bar]
+font_family = "CozetteVector"
+order = [ "default", "VioletArch" ]
+
+    [bar.VioletArch]
+    border_width = 1.0
+    capsule_radius = 0
+    center = [ "taskbar", "nix-monitor" ]
+    enabled = true
+    end = [
+        "left_parenthesis",
+        "Notif_Bell",
+        "divider",
+        "status_3",
+        "divider",
+        "widget_2",
+        "divider",
+        "CPU_Icon",
+        "cpu",
+        "divider",
+        "Ram_Icon",
+        "ram",
+        "divider",
+        "Power_Button",
+        "right_parenthesis",
+        "tray"
+    ]
+    hover_highlight = false
+    margin_ends = 0
+    radius = 0
+    start = [ "calendar_icon", "date", "Seperator", "clock_button", "clock", "Seperator", "media" ]
+    widget_spacing = 10
+
+    [bar.default]
+    background_opacity = 0.84999998100101948
+    capsule = true
+    capsule_fill = "outline"
+    capsule_radius = 8
+    center = [ "taskbar" ]
+    concave_edge_corners = false
+    contact_shadow = true
+    enabled = false
+    end = [ "notifications", "brightness", "clock", "session", "tray" ]
+    font_weight = 400
+    margin_edge = 4
+    margin_ends = 4
+    padding = 10
+    panel_overlap = 0
+    radius = 10
+    shadow = false
+    start = [ "control-center", "group:g1", "tracker", "widget", "status" ]
+
+        [[bar.default.capsule_group]]
+        enabled = true
+        fill = "outline"
+        id = "g1"
+        members = [ "cpu", "ram" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 6.0
+
+[brightness]
+enable_ddcutil = true
+
+[calendar]
+enabled = false
+
+[control_center]
+sidebar = "full"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "clipboard"
+
+    [[control_center.shortcuts]]
+    type = "mic_mute"
+
+    [[control_center.shortcuts]]
+    type = "dark_mode"
+
+    [[control_center.shortcuts]]
+    type = "sysmon"
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[idle]
+pre_action_fade_seconds = 0
+
+[location]
+address = "Rowlett"
+custom_schedule = true
+sunrise = "07:00"
+sunset = "21:30"
+
+[lockscreen]
+blur_intensity = 0.029999999999999999
+tint_intensity = 0.55000000000000004
+wallpaper = "/home/weeble/Pictures/Wallpapers/Kyuushi5.jpg"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@WL-1", "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@DVI-D-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DVI-D-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 957.0
+    output = "DVI-D-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DVI-D-1".settings]
+        center_password_text = false
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 957.0
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        center_password_text = false
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 476.0
+    cy = 854.0
+    output = "WL-1"
+    placement_height = 1036.0
+    placement_width = 952.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+temperature_night = 2600
+
+[notification]
+filter_order = [ "pomodoro" ]
+
+    [notification.filter.pomodoro]
+    allow_permanent = true
+    enabled = false
+    match = "noctalia"
+    match_content = "Pomodoro Timer"
+    play_sound = false
+    save_history = true
+    show_toast = true
+
+[osd]
+offset_x = 0
+offset_y = 0
+
+[plugin_settings."blackbartblues/keymap"]
+compositor = "niri"
+niri_config = "~/.config/niri/keybinds.kdl"
+
+[plugin_settings."cleboost/anilist"]
+client_id = "47211"
+client_secret = "iVcNicGODtTG7YFWeoCH9CVjEhJaQ4lRHr2ByX4k"
+
+[plugin_settings."nightwatch75/todo"]
+panel_placement = "floating"
+panel_position = "center"
+
+[plugin_settings."nilsonlinux/rss-notifier"]
+feed_urls = [ "https://bungle.online/feed.xml" ]
+list_open_near_click = false
+list_placement = "floating"
+list_position = "center"
+max_notifications_per_cycle = 50
+refresh_minutes = 720
+
+[plugin_settings."noctalia/notes"]
+notes_dir = "~/Projects/Notes"
+panel_position = "center_left"
+
+[plugin_settings."noctalia/wallhaven"]
+browser_placement = "floating"
+browser_position = "center"
+
+[plugin_settings."thepunkoff/pomodoro"]
+bypass-noctalia-sound-globals = true
+long-break-duration = 25
+panel_placement = "floating"
+panel_position = "center"
+sessions-before-long-break = 3
+short-break-duration = 10
+use-bundled-alarm-sound = true
+work-duration = 30
+
+[plugin_settings."yuuto/calculator"]
+angle_unit = "deg"
+panel_open_near_click = false
+panel_placement = "floating"
+panel_position = "center"
+
+[plugins]
+enabled = [
+    "noctalia/notes",
+    "nightwatch75/todo",
+    "noctalia/wallhaven",
+    "yuuto/calculator",
+    "noctalia/screen_recorder",
+    "cleboost/anilist",
+    "blackbartblues/keymap",
+    "gabedunn/voxtype",
+    "nilsonlinux/rss-notifier",
+    "thepunkoff/pomodoro"
+]
+
+[shell]
+app_icon_color = "primary"
+app_icon_colorize = true
+avatar_path = "/home/weeble/Pictures/Draluc.png"
+clipboard_keep_from_closed_apps = false
+corner_radius_scale = 0.20000000298023224
+date_format = "%A, %B %e %Y"
+font_family = "CozetteVector"
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+polkit_agent = true
+settings_show_advanced = true
+telemetry_enabled = true
+
+    [shell.launcher]
+    pinned = [ "zen-excluded" ]
+
+    [shell.panel]
+    control_center_placement = "floating"
+    control_center_position = "center"
+    session_placement = "floating"
+    wallpaper_placement = "floating"
+    wallpaper_position = "center"
+
+    [shell.screen_corners]
+    size = 1
+
+    [shell.screenshot]
+    save_to_file = false
+
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "notify-send 'Noctalia' 'Custom session entry'"
+    enabled = true
+
+    [shell.shadow]
+    direction = "down_right"
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Lilac AMOLED"
+custom_palette = "Violet Arch"
+mode = "dark"
+source = "custom"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "kcolorscheme", "niri", "qt", "umbriel" ]
+    community_ids = [
+        "zen-browser",
+        "discord",
+        "telegram",
+        "libreoffice",
+        "neovim",
+        "obsidian",
+        "vscode",
+        "steam",
+        "fastfetch",
+        "obs"
+    ]
+
+[theme.templates.user.modernz]
+input_path  = "$XDG_CONFIG_HOME/noctalia/templates/modernz.conf"
+output_path = "$XDG_CONFIG_HOME/mpv/noctalia.conf"
+
+[theme.templates.user.hyprfm]
+input_path  = "$XDG_CONFIG_HOME/noctalia/templates/hyprfm.toml"
+output_path = "$XDG_CONFIG_HOME/hyprfm/themes/noctalia.toml"
+
+[wallpaper]
+directory = "/home/weeble/Pictures/Wallpapers"
+fill_mode = "stretch"
+
+    [wallpaper.default]
+    path = "/home/weeble/Pictures/Wallpapers/wallhaven-yqv3lx.png"
+
+    [wallpaper.last]
+    path = "/home/weeble/Pictures/Wallpapers/wallhaven-yqv3lx.png"
+
+    [wallpaper.monitors.DVI-D-1]
+    path = "/home/weeble/Pictures/Wallpapers/wallhaven-yqv3lx.png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/weeble/Pictures/Wallpapers/wallhaven-yqv3lx.png"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Kyuushi"
+    palette_source = "custom"
+    path = "/home/weeble/Pictures/Wallpapers/Kyuushi.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Violet Arch"
+    palette_source = "custom"
+    path = "/home/weeble/Pictures/Wallpapers/gojo.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Kyuushi"
+    palette_source = "custom"
+    path = "/home/weeble/Pictures/Wallpapers/Kyuushi2.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Kyuushi"
+    palette_source = "custom"
+    path = "/home/weeble/Pictures/Wallpapers/Kyuushi5.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Violet Arch"
+    palette_source = "custom"
+    path = "/home/weeble/Pictures/Wallpapers/wallhaven-k82kp1.png"
+    theme_mode = "dark"
+
+[widget.CPU_Icon]
+glyph = ""
+label = ""
+scale = 1.3
+type = "custom_button"
+
+[widget.Notif_Bell]
+glyph = ""
+label = ""
+scale = 1.4000000000000001
+type = "custom_button"
+
+    [widget.Notif_Bell.actions]
+    left = "panel-toggle control-center notifications"
+
+[widget.Power_Button]
+font_family = "Cozette"
+glyph = ""
+label = "⏻"
+scale = 1.4000000000000001
+type = "custom_button"
+
+    [widget.Power_Button.actions]
+    left = "panel-toggle session"
+
+[widget.Ram_Icon]
+capsule = true
+capsule_opacity = 0.0
+capsule_padding = 0
+glyph = ""
+label = "󰾲"
+scale = 1.6000000000000001
+type = "custom_button"
+
+[widget.Seperator]
+glyph = ""
+label = "/"
+type = "custom_button"
+
+[widget.audio_visualizer]
+anchor = false
+capsule = true
+capsule_fill = "outline"
+capsule_padding = 10.0
+color_1 = "on_surface"
+color_2 = "on_surface"
+mirrored = false
+show_when_idle = true
+
+[widget.brightness]
+capsule = true
+capsule_fill = "outline"
+show_label = false
+
+[widget.calendar_icon]
+glyph = ""
+label = ""
+scale = 1.4000000000000001
+type = "custom_button"
+
+[widget.clipboard]
+capsule = true
+capsule_fill = "outline"
+
+[widget.clock]
+capsule_fill = "outline"
+capsule_padding = 6.0
+capsule_radius = 5
+interactive = false
+scale = 1.1000000000000001
+
+[widget.clock_button]
+glyph = ""
+label = ""
+scale = 1.25
+type = "custom_button"
+
+[widget.control-center]
+capsule = true
+capsule_fill = "outline"
+glyph = "bat"
+
+[widget.cpu]
+capsule = false
+capsule_fill = "outline"
+highlight_color = "error"
+show_glyph = false
+visualization = "none"
+
+[widget.date]
+format = "{:%a %b %d}"
+scale = 1.1000000000000001
+
+[widget.divider]
+glyph = ""
+label = "|"
+scale = 1.1000000000000001
+type = "custom_button"
+
+[widget.left_parenthesis]
+capsule_opacity = 0.0
+capsule_padding = 0
+glyph = ""
+label = "["
+scale = 1.45
+type = "custom_button"
+
+[widget.media]
+art_size = 50
+color = "tertiary"
+title_scroll = "on_hover"
+
+[widget.network]
+capsule = true
+capsule_fill = "outline"
+show_label = false
+
+[widget.notifications]
+capsule = true
+capsule_fill = "outline"
+
+[widget.ram]
+capsule = false
+capsule_fill = "outline"
+highlight_color = "on_surface"
+show_glyph = false
+stat = "ram_pct"
+visualization = "none"
+
+[widget.right_parenthesis]
+glyph = ""
+label = "]"
+scale = 1.45
+type = "custom_button"
+
+[widget.screenshot]
+capsule = true
+capsule_fill = "outline"
+
+[widget.session]
+capsule = true
+capsule_fill = "outline"
+
+[widget.status_3]
+streaming_color = "primary"
+transcribing_color = "secondary"
+type = "gabedunn/voxtype:status"
+
+[widget.sysmon]
+custom_image = " "
+show_glyph = false
+visualization = "none"
+
+[widget.taskbar]
+anchor = true
+capsule = true
+capsule_fill = "on_surface_variant"
+capsule_opacity = 0.0
+hide_empty_workspaces = true
+inactive_opacity = 0.5
+only_active_workspace = true
+show_all_outputs = false
+show_window_title = true
+show_workspace_label = false
+taskbar_max_width = 640.0
+window_title_max_width = 150.0
+workspace_group_capsule = false
+workspace_label_placement = "inside"
+
+[widget.tracker]
+type = "cleboost/anilist:tracker"
+
+[widget.tray]
+anchor = false
+capsule_opacity = 0.0
+capsule_padding = 0
+drawer = true
+
+[widget.volume]
+anchor = false
+capsule = true
+capsule_fill = "outline"
+show_label = false
+
+[widget.widget]
+type = "thepunkoff/pomodoro:widget"
+
+[widget.widget_2]
+scale = 1.1500000000000001
+type = "thepunkoff/pomodoro:widget"
+
+[widget.workspaces]
+empty_color = "tertiary"
+focused_output_only = true
+label_source = "name"
+max_label_chars = 6
