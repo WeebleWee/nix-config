@@ -2,7 +2,11 @@
 
 {
   programs.niri.settings.layout = {
-    focus-ring.enable = false;
+    focus-ring = {
+      enable = false;
+      width = 0;
+    };
+    
     gaps = 4;
     background-color = "transparent";
 
