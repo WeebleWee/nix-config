@@ -2,8 +2,25 @@
 
 {
   programs.niri.settings.layout = {
+    focus-ring.enable = false;
     gaps = 4;
     background-color = "transparent";
+
+    border = {
+      enable = true;
+      width = 1.5;
+    };
+
+    shadow = {
+      enable = true;
+      draw-behind-window = false;
+      softness = 1;
+      spread = 1;
+      offset = {
+        x = 2;
+        y = 2;
+      };
+    };
 
     preset-column-widths = [
       { proportion = 0.333; }
