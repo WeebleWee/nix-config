@@ -1,8 +1,9 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, ...}:
 
 let
   niriPkg = config.programs.niri.package;
   withIncludes = config.programs.niri.finalConfig + ''
+
     include optional=true "animations.kdl"
     include optional=true "noctalia.kdl"
   '';
