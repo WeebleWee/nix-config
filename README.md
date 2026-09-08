@@ -9,3 +9,4 @@
 - [ ] Find cool pixel art wallpaper
 - [ ] Add Recyclarr
 - [ ] Wine fonts???
+- [ ] Set more floating window rules

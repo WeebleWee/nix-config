@@ -31,13 +31,15 @@
     ];
   };
 
-  # Obsidian and a few others are unfree. Keep this narrow rather than
-  # setting allowUnfree = true globally.
-  nixpkgs.config.allowUnfreePredicate =
+  nixpkgs.config.allowUnfreePredicate = 
     pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "obsidian"
     ];
+
+  programs.nix-ld.enable = true;
+
+  services.xserver.videoDrivers = ["amdgpu"];
 
   # -------------------------------------------------------------- system ---
   networking.hostName = "VioletFlake";
@@ -69,8 +71,6 @@
     usbutils
     pciutils
   ];
-
-  programs.nix-ld.enable = true;
 
   # Set once at install time and then leave alone forever.
   system.stateVersion = "26.05";

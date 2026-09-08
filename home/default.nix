@@ -30,6 +30,7 @@
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     SUDO_PROMPT = "This needs root priveleges. What's the magic word uwu? ";
     HISTORY_IGNORE = "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)";
+    STEAM_EXTA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
   home.packages = with pkgs; [
@@ -62,6 +63,7 @@
     kdePackages.dolphin
     kdePackages.kio-extras
     kdePackages.ffmpegthumbs
+    protonup-ng
   ];
 
   programs.zen-browser = {
