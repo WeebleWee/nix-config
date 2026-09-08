@@ -58,6 +58,10 @@
     newsflash
     ffmpeg
     exiftool
+    nixfmt-rfc-style
+    kdePackages.dolphin
+    kdePackages.kio-extras
+    kdePackages.ffmpegthumbs
   ];
 
   programs.zen-browser = {

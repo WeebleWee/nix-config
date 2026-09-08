@@ -26,6 +26,8 @@
       };
     };
 
+    default-column-width.proportion = 0.5;
+
     preset-column-widths = [
       { proportion = 0.333; }
       { proportion = 0.5; }
