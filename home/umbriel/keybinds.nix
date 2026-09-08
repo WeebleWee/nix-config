@@ -3,6 +3,7 @@
 let
   ghostty = "${pkgs.ghostty}/bin/ghostty";
   pcmanfm = "${pkgs.lxqt.pcmanfm-qt}/bin/pcmanfm-qt";
+  newsflash = "${pkgs.newflash}/bin/newsflash";
 in
 {
   programs.umbriel.settings.keybinds = {
@@ -59,8 +60,13 @@ in
       repeat = false;
     };
 
+    "Mod+R" = {
+      action = "spawn:${newflash}";
+      repeat = false;
+    }
+
     # ─── Noctalia core ───────────────────────────────────────────────────
-    "Mod+Space" = {
+    "Mod" = {
       action = "spawn:noctalia msg panel-toggle launcher";
       repeat = false;
     };

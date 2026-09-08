@@ -8,6 +8,7 @@ let
   inherit (config.lib.niri.actions) spawn;
   ghostty = "${pkgs.ghostty}/bin/ghostty";
   pcmanfm = "${pkgs.lxqt.pcmanfm-qt}/bin/pcmanfm-qt";
+  newsflash = "${pkgs.newflash}/bin/newsflash";
 in
 {
   programs.niri.settings.binds = with config.lib.niri.actions; {
@@ -66,9 +67,13 @@ in
       action = spawn "noctalia" "msg" "panel-toggle" "yuuto/calculator:panel";
       repeat = false;
     };
+    "Mod+R" = {
+      action = spawn newsflash;
+      repeat = false;
+    }
 
     # ─── Noctalia core ───────────────────────────────────────────────────
-    "Mod+Space" = {
+    "Mod" = {
       action = spawn "noctalia" "msg" "panel-toggle" "launcher";
       repeat = false;
     };
