@@ -10,3 +10,4 @@
 - [ ] Add Recyclarr
 - [ ] Wine fonts???
 - [ ] Set more floating window rules
+- [ ] New Fastfetch Theme
