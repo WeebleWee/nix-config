@@ -8,7 +8,7 @@ let
   inherit (config.lib.niri.actions) spawn;
   ghostty = "${pkgs.ghostty}/bin/ghostty";
   pcmanfm = "${pkgs.lxqt.pcmanfm-qt}/bin/pcmanfm-qt";
-  newsflash = "${pkgs.newflash}/bin/newsflash";
+  newsflash = "${pkgs.newsflash}/bin/newsflash";
 in
 {
   programs.niri.settings.binds = with config.lib.niri.actions; {
@@ -70,10 +70,10 @@ in
     "Mod+R" = {
       action = spawn newsflash;
       repeat = false;
-    }
+    };
 
     # ─── Noctalia core ───────────────────────────────────────────────────
-    "Mod" = {
+    "Mod+Space" = {
       action = spawn "noctalia" "msg" "panel-toggle" "launcher";
       repeat = false;
     };
@@ -146,10 +146,6 @@ in
     };
     "Mod+Shift+Menu" = {
       action = spawn "noctalia" "msg" "panel-toggle" "noctalia/wallhaven:browser";
-      repeat = false;
-    };
-    "Mod+R" = {
-      action = spawn "noctalia" "msg" "panel-toggle" "nilsonlinux/rss-notifier:list" "text";
       repeat = false;
     };
 
