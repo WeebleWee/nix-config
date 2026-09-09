@@ -59,7 +59,7 @@
     newsflash
     ffmpeg
     exiftool
-    nixfmt-rfc-style
+    nixfmt
     kdePackages.dolphin
     kdePackages.kio-extras
     kdePackages.ffmpegthumbs
