@@ -31,11 +31,7 @@
     ];
   };
 
-  nixpkgs.config.allowUnfreePredicate = 
-    pkg:
-    builtins.elem (pkgs.lib.getName pkg) [
-      "obsidian"
-    ];
+  nixpkgs.config.allowUnfree = true;
 
   programs.nix-ld.enable = true;
 

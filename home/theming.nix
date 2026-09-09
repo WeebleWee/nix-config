@@ -11,9 +11,9 @@
     Appearance = {
       color_scheme_path = "${config.home.homeDirectory}/.config/qt6ct/colors/noctalia.conf";
       custom_palette = "true";
-      icon_theme = "Pixel-Theme";
+      icon_theme = "pixelitos-dark";
       standard_dialogs = "xdgdesktopportal";
-      style = "Breeze";
+      style = "Fusion";
     };
 
     Fonts = {

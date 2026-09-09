@@ -1,10 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  inputs,
-  ...
-}:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -39,7 +33,6 @@
   environment.systemPackages = with pkgs; [
     wl-clipboard
     papirus-icon-theme
-    lxqt.pcmanfm-qt
     adwaita-icon-theme
     qt6Packages.qt6ct
     brightnessctl
@@ -49,8 +42,10 @@
     slurp
     glib
     xarchiver
-    kdePackages.breeze
     xwayland-satellite
+    gpu-screen-recorder
+    bc
+    hyprpicker
   ];
 
   # ------------------------------------------------------------ login ---

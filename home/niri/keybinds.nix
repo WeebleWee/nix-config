@@ -7,7 +7,7 @@
 let
   inherit (config.lib.niri.actions) spawn;
   ghostty = "${pkgs.ghostty}/bin/ghostty";
-  pcmanfm = "${pkgs.lxqt.pcmanfm-qt}/bin/pcmanfm-qt";
+  dolphin = "${pkgs.kdePackages.dolphin}/bin/dolphin";
   newsflash = "${pkgs.newsflash}/bin/newsflash";
 in
 {
@@ -60,7 +60,7 @@ in
       repeat = false;
     };
     "Mod+F" = {
-      action = spawn pcmanfm;
+      action = spawn dolphin;
       repeat = false;
     };
     "Mod+A" = {

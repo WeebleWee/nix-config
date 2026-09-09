@@ -45,7 +45,6 @@
     tree-sitter
     nodejs_22
     luajit
-    lxqt.lximage-qt
     tor-browser
     mullvad-browser
     telegram-desktop
@@ -61,7 +60,6 @@
     exiftool
     nixfmt
     kdePackages.dolphin
-    kdePackages.kio-extras
     kdePackages.ffmpegthumbs
     protonup-ng
   ];

@@ -2,8 +2,8 @@
 
 let
   ghostty = "${pkgs.ghostty}/bin/ghostty";
-  pcmanfm = "${pkgs.lxqt.pcmanfm-qt}/bin/pcmanfm-qt";
-  newsflash = "${pkgs.newflash}/bin/newsflash";
+  dolphin = "${pkgs.kdePackages.dolphin}/bin/dolphin";
+  newsflash = "${pkgs.newsflash}/bin/newsflash";
 in
 {
   programs.umbriel.settings.keybinds = {
@@ -51,7 +51,7 @@ in
     };
 
     "Mod+F" = {
-      action = "spawn:${pcmanfm}";
+      action = "spawn:${dolphin}";
       repeat = false;
     };
 
@@ -61,9 +61,9 @@ in
     };
 
     "Mod+R" = {
-      action = "spawn:${newflash}";
+      action = "spawn:${newsflash}";
       repeat = false;
-    }
+    };
 
     # ─── Noctalia core ───────────────────────────────────────────────────
     "Mod" = {
@@ -132,10 +132,6 @@ in
     };
     "Mod+Shift+Menu" = {
       action = "spawn:noctalia msg panel-toggle noctalia/wallhaven:browser";
-      repeat = false;
-    };
-    "Mod+R" = {
-      action = "spawn:noctalia msg panel-toggle nilsonlinux/rss-notifier:list text";
       repeat = false;
     };
 
