@@ -14,5 +14,4 @@
 
   programs.umbriel.enable = true;
 
-  programs.umbriel.validateConfig = false;
 }

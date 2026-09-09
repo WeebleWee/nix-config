@@ -30,6 +30,10 @@ in
     };
   };
 
+  systemd.user.services.xdg-desktop-portal-umbriel.restartTriggers = [
+    config.programs.umbriel.portalPackage
+  ];
+
   systemd.user.services.niri-screenshare = {
     path = [ config.programs.niri.package ];
     environment.NIRI_SCREENSHARE_PICKER = "1";
