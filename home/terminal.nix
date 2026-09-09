@@ -101,6 +101,19 @@
       precmd () { vcs_info }
       _comp_options+=(globdots)
 
+      xterm_title_precmd() {
+        print -Pn -- '\e]2;%n@%m %~\a'
+      }
+
+      xterm_title_preexec() {
+        print -Pn -- '\e]2;%n@%m %~ %# ' && print -n -- "''${(q)1}\a"
+      }
+
+      if [[ "$TERM_PROGRAM" == ghostty ]]; then
+        add-zsh-hook -Uz precmd xterm_title_precmd
+        add-zsh-hook -Uz preexec xterm_title_preexec
+      fi
+
       zstyle ':completion:*' menu select
       zstyle ':completion:*:descriptions' format '[%d]'
       zstyle ':completion:*' list-colors ''${(s.:.)LS_COLORS}

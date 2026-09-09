@@ -364,10 +364,6 @@ wallpaper_scheme = "m3-content"
 input_path  = "$XDG_CONFIG_HOME/noctalia/templates/modernz.conf"
 output_path = "$XDG_CONFIG_HOME/mpv/noctalia.conf"
 
-[theme.templates.user.hyprfm]
-input_path  = "$XDG_CONFIG_HOME/noctalia/templates/hyprfm.toml"
-output_path = "$XDG_CONFIG_HOME/hyprfm/themes/noctalia.toml"
-
 [wallpaper]
 directory = "/home/weeble/Pictures/Wallpapers"
 fill_mode = "stretch"
