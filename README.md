@@ -13,6 +13,7 @@ WIP aaaaaaa
 - [ ] Wine fonts???
 - [ ] Set more floating window rules
 - [x] New Fastfetch Theme
+- [ ] Add imperative dotfiles
 
 ## Programs
 
@@ -42,7 +43,7 @@ uhhhhhhhhh come back later before posting
 
 Font: CozetteVector
 
-Icons: Pixora, Pixelitos, Simple Pixel icon pack, Papirus.
+Icons: [Pixora](https://github.com/tsora1603/pixora-icons), [Pixelitos](https://github.com/ItsZariep/pixelitos-icon-theme), [Simple Pixel icon pack](https://github.com/PaulLesur/plasma-pixel-icon-theme), [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 
 Previews coming soon hopefully.
 
