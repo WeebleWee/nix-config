@@ -31,6 +31,12 @@
         IdentityFile = "~/.ssh/gitea";
         IdentitiesOnly = true;
       };
+
+      "github.com" = {
+        User = "git";
+        IdentityFile = "~/.ssh/github";
+        IdentitiesOnly = true;
+      };
     };
   };
 
