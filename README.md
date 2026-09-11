@@ -12,7 +12,7 @@ WIP aaaaaaa
 - [ ] Add Recyclarr
 - [ ] Wine fonts???
 - [ ] Set more floating window rules
-- [ ] New Fastfetch Theme
+- [x] New Fastfetch Theme
 
 ## Programs
 

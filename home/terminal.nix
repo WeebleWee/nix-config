@@ -15,7 +15,7 @@
     settings = {
       theme = "noctalia";
       font-family = "CozetteVector";
-      font-size = 18;
+      font-size = 24;
       font-synthetic-style = false;
       freetype-load-flags = "monochrome";
       term = "xterm-256color";
@@ -169,7 +169,7 @@
         return 127
       }
 
-      fastfetch
+      fastfetch --logo ~/lil.txt
     '';
   };
 }
