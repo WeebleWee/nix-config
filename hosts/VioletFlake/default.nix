@@ -15,6 +15,8 @@
     useOSProber = true;
     configurationLimit = 10;
   };
+  
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   boot.supportedFilesystems = [ "ntfs" ];
 
