@@ -15,7 +15,7 @@
     useOSProber = true;
     configurationLimit = 10;
   };
-  
+
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
   boot.supportedFilesystems = [ "ntfs" ];
@@ -55,20 +55,6 @@
     pulse.enable = true;
     wireplumber.enable = true;
   };
-
-  # ---------------------------------------------------------------- user ---
-  environment.systemPackages = with pkgs; [
-    git
-    curl
-    wget
-    unzip
-    p7zip
-    file
-    tree
-    htop
-    usbutils
-    pciutils
-  ];
 
   # Set once at install time and then leave alone forever.
   system.stateVersion = "26.05";

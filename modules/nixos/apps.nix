@@ -15,6 +15,16 @@
   # --------------------- Packages
   environment.systemPackages =
     (with pkgs; [
+      git
+      curl
+      wget
+      unzip
+      p7zip
+      file
+      tree
+      htop
+      usbutils
+      pciutils
       gcc
       gnumake
       go

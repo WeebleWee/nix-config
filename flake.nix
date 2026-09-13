@@ -9,6 +9,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -27,8 +29,6 @@
     };
 
     umbriel.url = "git+https://github.com/noctalia-dev/umbriel";
-
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";

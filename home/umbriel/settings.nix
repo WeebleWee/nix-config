@@ -2,7 +2,10 @@
 
 {
 
-  programs.umbriel.settings.include.files = [ "/home/weeble/.config/umbriel/noctalia.toml" ];
+  programs.umbriel.settings.include.files = [ 
+    "/home/weeble/.config/umbriel/noctalia.toml"
+    "/home/weeble/.config/umbriel/animations.toml"
+  ];
 
   programs.umbriel.settings = {
 
