@@ -19,7 +19,7 @@ WIP aaaaaaa
 
 | Component       | Program         |
 | --------------- | --------------- |
-| Windows Manager | Niri/Umbriel    |
+| Windows Manager | Umbriel         |
 | Terminal        | Ghostty         |
 | Shell           | zsh             |
 | Fetch           | Fastfetch       |
@@ -34,14 +34,14 @@ I also got stuff like btop and cava for extra pretty points uwu
 ## Keybinds
 
 <details>
-  <summary>Niri/Noctalia</summary>
+  <summary>Umbriel</summary>
 
 uhhhhhhhhh come back later before posting
 </details>
 
 ## Icons and Previews
 
-Font: CozetteVector
+Font: [CozetteVector](https://github.com/the-moonwitch/Cozette)
 
 Icons: [Pixora](https://github.com/tsora1603/pixora-icons), [Pixelitos](https://github.com/ItsZariep/pixelitos-icon-theme), [Simple Pixel icon pack](https://github.com/PaulLesur/plasma-pixel-icon-theme), [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 

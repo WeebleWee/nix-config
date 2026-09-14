@@ -13,7 +13,7 @@
     ./obs.nix
     ./noctalia
     ./umbriel
-    ./niri
+    ./umbriel-portal.nix
   ];
 
   home.username = "weeble";
@@ -51,7 +51,6 @@
     filezilla
     qbittorrent
     libreoffice-stable
-    jan
     fastfetch
     vesktop
     vscodium

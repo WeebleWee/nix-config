@@ -1,8 +1,5 @@
-{ config, lib, inputs, pkgs, ... }:
+{ config, pkgs, ... }:
 
-let
-  niriScreenshare = inputs.niri-screenshare.packages.${pkgs.stdenv.hostPlatform.system}.default;
-in
 {
   # ---------------------------------------------------------- portals ---
   xdg.portal = {
@@ -10,7 +7,6 @@ in
     xdgOpenUsePortal = true;
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk
-      niriScreenshare
     ];
 
     config.umbriel = {
@@ -18,25 +14,13 @@ in
         "umbriel"
         "gtk"
       ];
+      "org.freedesktop.impl.portal.ScreenCast" = [ "umbriel" ];
       "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
       "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
-    };
-
-    config.niri = {
-      default = [ "gtk" ];
-      "org.freedesktop.impl.portal.ScreenCast" = [ "niri" ];
-      "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
-      "org.freedesktop.impl.portal.Access" = [ "gtk" ];
     };
   };
 
   systemd.user.services.xdg-desktop-portal-umbriel.restartTriggers = [
     config.programs.umbriel.portalPackage
   ];
-
-  systemd.user.services.niri-screenshare = {
-    path = [ config.programs.niri.package ];
-    environment.NIRI_SCREENSHARE_PICKER = "1";
-    wantedBy = lib.mkForce [ "niri.service" ];
-  };
 }

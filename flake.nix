@@ -11,16 +11,6 @@
 
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
 
-    niri = {
-      url = "github:sodiboo/niri-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    niri-screenshare = {
-      url = "github:pantarune/niri-screenshare";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
 
     noctalia-greeter = {

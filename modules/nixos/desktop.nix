@@ -5,7 +5,6 @@
     inputs.noctalia.nixosModules.default
     inputs.noctalia-greeter.nixosModules.default
     inputs.umbriel.nixosModules.default
-    inputs.niri.nixosModules.niri
   ];
 
   # ------------------------------------------------------- Noctalia v5 ---
@@ -17,16 +16,6 @@
 
   # ---------------------------------------------------------- Umbriel ---
   programs.umbriel.enable = true;
-
-  # ---------------------------------------------------------- Niri ---
-  niri-flake.cache.enable = true;
-
-  programs.niri.enable = true;
-
-  programs.niri.package = pkgs.niri;
-
-  # Noctalia provides polkit
-  systemd.user.services.niri-flake-polkit.enable = false;
 
   # ---------------------------------------------------------- Relevant packages ---
 
@@ -42,16 +31,14 @@
     slurp
     glib
     xarchiver
-    xwayland-satellite
     gpu-screen-recorder
     bc
     hyprpicker
   ];
 
   # ------------------------------------------------------------ login ---
-  programs.noctalia-greeter = {
+  services.displayManager.noctalia-greeter = {
     enable = true;
-    greeter-args = "";
 
     settings = {
       session.default = "Umbriel";
