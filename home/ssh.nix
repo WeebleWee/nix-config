@@ -12,11 +12,6 @@
         ServerAliveInterval = 60;
       };
 
-      "91.250.249.43" = {
-        IdentityFile = "~/.ssh/weeblekey";
-        AddKeysToAgent = "yes";
-      };
-
       "192.168.4.25" = {
         SetEnv = { TERM = "xterm-256color"; };
       };

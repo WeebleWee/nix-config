@@ -91,9 +91,7 @@
       ls = "eza --icons=always --color=always -a";
       vim = "nvim";
       radio = "sonicradio";
-      rss = "eilmeldung";
-      # jellyfin = "cue";
-      rebuild = "sudo nixos-rebuild switch --flake ~/nix#VioletFlake";
+      rebuild = "nh os switch";
     };
 
     initContent = ''

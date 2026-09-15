@@ -50,7 +50,6 @@
     telegram-desktop
     filezilla
     qbittorrent
-    libreoffice-stable
     fastfetch
     vesktop
     vscodium
@@ -61,6 +60,7 @@
     kdePackages.dolphin
     kdePackages.ffmpegthumbs
     protonup-ng
+    yt-dlp
   ];
 
   programs.zen-browser = {
