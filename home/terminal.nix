@@ -1,14 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # ---------------------------------------------------------- packages ---
-  home.packages = with pkgs; [
-    eza
-    bat
-    fzf
-    zoxide
-  ];
-
   # --------------------------------------------------------- ghostty ---
   programs.ghostty = {
     enable = true;
@@ -43,6 +35,7 @@
 
   programs.bat.enable = true;
   programs.fzf.enable = true;
+  programs.eza.enable = true;
 
   # ---------------------------------------------------------------- zsh ---
   programs.zsh = {

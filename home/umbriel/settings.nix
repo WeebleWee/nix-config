@@ -2,7 +2,7 @@
 
 {
 
-  programs.umbriel.settings.include.files = [ 
+  programs.umbriel.settings.include.files = [
     "/home/weeble/.config/umbriel/noctalia.toml"
     "/home/weeble/.config/umbriel/animations.toml"
   ];
@@ -29,11 +29,5 @@
 
     };
 
-  };
-
-  home.sessionVariables = {
-    XDG_CURRENT_DESKTOP = "Umbriel";
-    XDG_SESSION_TYPE = "wayland";
-    XDG_SESSION_DESKTOP = "Umbriel";
   };
 }

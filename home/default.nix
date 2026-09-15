@@ -30,7 +30,7 @@
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     SUDO_PROMPT = "This needs root priveleges. What's the magic word uwu? ";
     HISTORY_IGNORE = "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)";
-    STEAM_EXTA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
   home.packages = with pkgs; [
@@ -46,7 +46,6 @@
     nodejs_22
     luajit
     tor-browser
-    mullvad-browser
     telegram-desktop
     filezilla
     qbittorrent
