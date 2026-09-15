@@ -20,7 +20,6 @@
   # ---------------------------------------------------------- Relevant packages ---
 
   environment.systemPackages = with pkgs; [
-    wl-clipboard
     papirus-icon-theme
     adwaita-icon-theme
     qt6Packages.qt6ct

@@ -37,7 +37,6 @@ in
     "Mod+Alt+Up" = "column-move-left";
     "Mod+Alt+Down" = "column-move-right";
 
-    "Mod+Tab" = "window-focus-next";
     "Mod+I" = "overview-toggle";
 
     # ─── Navigation: mouse ───────────────────────────────────────────────
@@ -143,17 +142,13 @@ in
 
     # ─── Scratchpad ──────────────────────────────────────────────────────
 
-    "Mod+D" = "scratchpad-toggle";
-    "Mod+Shift+D" = "window-move-to-scratchpad";
-    "Mod+Alt+D" = {
+    "Mod+Space" = "scratchpad-toggle";
+    "Mod+Shift+Space" = "window-move-to-scratchpad";
+    "Mod+Ctrl+Space" = {
       action = "window-restore-from-scratchpad";
       repeat = false;
     };
-    "Mod+Ctrl+D" = "scratchpad-focus-next";
+    "Mod+Tab" = "scratchpad-focus-next";
 
-    "Mod+9" = "scratchpad-toggle:DVI-D-1";
-    "Mod+0" = "scratchpad-toggle:HDMI-A-1";
-    "Mod+Shift+9" = "window-move-to-scratchpad:DVI-D-1";
-    "Mod+Shift+0" = "window-move-to-scratchpad:HDMI-A-1";
   };
 }
