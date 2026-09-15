@@ -137,7 +137,7 @@ Font: [CozetteVector](https://github.com/the-moonwitch/Cozette)
 Icons: [Pixora](https://github.com/tsora1603/pixora-icons), [Pixelitos](https://github.com/ItsZariep/pixelitos-icon-theme), [Simple Pixel icon pack](https://github.com/PaulLesur/plasma-pixel-icon-theme), [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 
 <details>
-<summary>Previews<summary>
+<summary>Previews</summary>
 
 ![preview](assets/previews/desktop2.png)
 ![preview](assets/previews/desktop3.png)
