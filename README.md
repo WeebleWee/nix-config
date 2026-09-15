@@ -38,95 +38,95 @@ I also got programs like btop and cava for extra pretty points uwu
 <details>
   <summary>Umbriel</summary>
 
-`Mod` is the Super / Windows key.
+    `Mod` is the Super / Windows key.
 
-### Basics
+    ### Basics
 
-| Keybind               | Action                     |
-| --------------------- | -------------------------- |
-| `Mod` + `Q`           | Close window               |
-| `Mod` + `M`           | Toggle maximize            |
-| `Mod` + `G`           | Toggle maximize to edges   |
-| `Mod` + `Shift` + `F` | Toggle fullscreen          |
-| `Print`               | Screenshot a region        |
-| `Mod` + `Print`       | Screenshot the full screen |
+    | Keybind               | Action                     |
+    | --------------------- | -------------------------- |
+    | `Mod` + `Q`           | Close window               |
+    | `Mod` + `M`           | Toggle maximize            |
+    | `Mod` + `G`           | Toggle maximize to edges   |
+    | `Mod` + `Shift` + `F` | Toggle fullscreen          |
+    | `Print`               | Screenshot a region        |
+    | `Mod` + `Print`       | Screenshot the full screen |
 
-### Navigation
+    ### Navigation
 
-| Keybind                      | Action                                 |
-| ---------------------------- | -------------------------------------- |
-| `Mod` + `Up` / `Page Up`     | Previous workspace                     |
-| `Mod` + `Down` / `Page Down` | Next workspace                         |
-| `Mod` + `Left`               | Focus window to the left               |
-| `Mod` + `Right`              | Focus window to the right              |
-| `Mod` + `Scroll Up`          | Focus window to the left               |
-| `Mod` + `Scroll Down`        | Focus window to the right              |
-| `Mod` + `Shift` + `Up`       | Move window to the output on the right |
-| `Mod` + `Shift` + `Down`     | Move window to the output on the left  |
-| `Mod` + `Alt` + `Up`         | Move column left                       |
-| `Mod` + `Alt` + `Down`       | Move column right                      |
-| `Mod` + `I`                  | Toggle overview                        |
+    | Keybind                      | Action                                 |
+    | ---------------------------- | -------------------------------------- |
+    | `Mod` + `Up` / `Page Up`     | Previous workspace                     |
+    | `Mod` + `Down` / `Page Down` | Next workspace                         |
+    | `Mod` + `Left`               | Focus window to the left               |
+    | `Mod` + `Right`              | Focus window to the right              |
+    | `Mod` + `Scroll Up`          | Focus window to the left               |
+    | `Mod` + `Scroll Down`        | Focus window to the right              |
+    | `Mod` + `Shift` + `Up`       | Move window to the output on the right |
+    | `Mod` + `Shift` + `Down`     | Move window to the output on the left  |
+    | `Mod` + `Alt` + `Up`         | Move column left                       |
+    | `Mod` + `Alt` + `Down`       | Move column right                      |
+    | `Mod` + `I`                  | Toggle overview                        |
 
-### Applications
+    ### Applications
 
-| Keybind          | Action                        |
-| ---------------- | ----------------------------- |
-| `Mod` + `Return` | Launch Ghostty (terminal)     |
-| `Mod` + `F`      | Launch Dolphin (file manager) |
-| `Mod` + `R`      | Launch NewsFlash (RSS reader) |
-| `Mod` + `A`      | Toggle calculator panel       |
+    | Keybind          | Action                        |
+    | ---------------- | ----------------------------- |
+    | `Mod` + `Return` | Launch Ghostty (terminal)     |
+    | `Mod` + `F`      | Launch Dolphin (file manager) |
+    | `Mod` + `R`      | Launch NewsFlash (RSS reader) |
+    | `Mod` + `A`      | Toggle calculator panel       |
 
-### Noctalia
+    ### Noctalia
 
-| Keybind                   | Action                 |
-| ------------------------- | ---------------------- |
-| `Mod`                     | Toggle launcher        |
-| `Mod` + `C`               | Toggle control center  |
-| `Mod` + `S`               | Toggle settings        |
-| `Mod` + `Menu`            | Toggle wallpaper panel |
-| `Mod` + `Shift` + `R`     | Reload config          |
-| `Ctrl` + `Alt` + `Delete` | Toggle session panel   |
+    | Keybind                   | Action                 |
+    | ------------------------- | ---------------------- |
+    | `Mod`                     | Toggle launcher        |
+    | `Mod` + `C`               | Toggle control center  |
+    | `Mod` + `S`               | Toggle settings        |
+    | `Mod` + `Menu`            | Toggle wallpaper panel |
+    | `Mod` + `Shift` + `R`     | Reload config          |
+    | `Ctrl` + `Alt` + `Delete` | Toggle session panel   |
 
-### Audio
+    ### Audio
 
-| Keybind       | Action       |
-| ------------- | ------------ |
-| `Volume Up`   | Raise volume |
-| `Volume Down` | Lower volume |
-| `Mute`        | Toggle mute  |
+    | Keybind       | Action       |
+    | ------------- | ------------ |
+    | `Volume Up`   | Raise volume |
+    | `Volume Down` | Lower volume |
+    | `Mute`        | Toggle mute  |
 
-### Media
+    ### Media
 
-| Keybind | Action         |
-| ------- | -------------- |
-| `F5`    | Stop           |
-| `F6`    | Previous track |
-| `F7`    | Play / pause   |
-| `F8`    | Next track     |
+    | Keybind | Action         |
+    | ------- | -------------- |
+    | `F5`    | Stop           |
+    | `F6`    | Previous track |
+    | `F7`    | Play / pause   |
+    | `F8`    | Next track     |
 
-### Plugins
+    ### Plugins
 
-| Keybind                  | Action                   |
-| ------------------------ | ------------------------ |
-| `Mod` + `T`              | Toggle Pomodoro panel    |
-| `Mod` + `N`              | Toggle Notes panel       |
-| `Mod` + `L`              | Toggle To-do panel       |
-| `Mod` + `Shift` + `Menu` | Toggle Wallhaven browser |
+    | Keybind                  | Action                   |
+    | ------------------------ | ------------------------ |
+    | `Mod` + `T`              | Toggle Pomodoro panel    |
+    | `Mod` + `N`              | Toggle Notes panel       |
+    | `Mod` + `L`              | Toggle To-do panel       |
+    | `Mod` + `Shift` + `Menu` | Toggle Wallhaven browser |
 
-### Scratchpad
+    ### Scratchpad
 
-| Keybind                   | Action                         |
-| ------------------------- | ------------------------------ |
-| `Mod` + `Space`           | Toggle scratchpad              |
-| `Mod` + `Shift` + `Space` | Move window to scratchpad      |
-| `Mod` + `Ctrl` + `Space`  | Restore window from scratchpad |
-| `Mod` + `Tab`             | Focus next scratchpad window   |
+    | Keybind                   | Action                         |
+    | ------------------------- | ------------------------------ |
+    | `Mod` + `Space`           | Toggle scratchpad              |
+    | `Mod` + `Shift` + `Space` | Move window to scratchpad      |
+    | `Mod` + `Ctrl` + `Space`  | Restore window from scratchpad |
+    | `Mod` + `Tab`             | Focus next scratchpad window   |
 
-### Clipboard
+    ### Clipboard
 
-| Keybind               | Action                   |
-| --------------------- | ------------------------ |
-| `Mod` + `Shift` + `V` | Toggle clipboard history |
+    | Keybind               | Action                   |
+    | --------------------- | ------------------------ |
+    | `Mod` + `Shift` + `V` | Toggle clipboard history |
 
 </details>
 
@@ -136,13 +136,13 @@ Font: [CozetteVector](https://github.com/the-moonwitch/Cozette)
 
 Icons: [Pixora](https://github.com/tsora1603/pixora-icons), [Pixelitos](https://github.com/ItsZariep/pixelitos-icon-theme), [Simple Pixel icon pack](https://github.com/PaulLesur/plasma-pixel-icon-theme), [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 
-<details> 
+<details>
   <summary>Previews<summary>
 
-![preview](assets/previews/desktop2.png)
-![preview](assets/previews/desktop3.png)
-![preview](assets/previews/desktop4.png)
-![preview](assets/previews/desktop5.png)
+  ![preview](assets/previews/desktop2.png)
+  ![preview](assets/previews/desktop3.png)
+  ![preview](assets/previews/desktop4.png)
+  ![preview](assets/previews/desktop5.png)
 
 </details>
 
