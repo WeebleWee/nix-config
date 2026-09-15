@@ -7,7 +7,7 @@
     settings = {
       theme = "noctalia";
       font-family = "CozetteVector";
-      font-size = 22;
+      font-size = 20;
       font-synthetic-style = false;
       freetype-load-flags = "monochrome";
       term = "xterm-256color";
