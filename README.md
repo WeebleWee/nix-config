@@ -136,6 +136,8 @@ Font: [CozetteVector](https://github.com/the-moonwitch/Cozette)
 
 Icons: [Pixora](https://github.com/tsora1603/pixora-icons), [Pixelitos](https://github.com/ItsZariep/pixelitos-icon-theme), [Simple Pixel icon pack](https://github.com/PaulLesur/plasma-pixel-icon-theme), [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 
+GRUB theme: [Hyperfluent](https://github.com/Coopydood/HyperFluent-GRUB-Theme)
+
 <details>
 <summary>Previews</summary>
 
