@@ -11,6 +11,7 @@
     enable = true;
     efiSupport = true;
     device = "nodev";
+    theme = ../../assets/hyperfluent;
     useOSProber = true;
     configurationLimit = 10;
   };
@@ -34,7 +35,17 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc.lib
+      zlib
+      openssl
+      curl
+      icu
+      libxml2
+    ];
+  };
 
   services.xserver.videoDrivers = ["amdgpu"];
 

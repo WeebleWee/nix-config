@@ -4,11 +4,11 @@ My desktop configuration focused on making things personal and purple.
 
 ![My Desktop](assets/previews/desktop1.png)
 
-### To Do:
+### To Do
 
 - [ ] Make gaming real
 - [x] Choose between Dolphin or Pcmanfm
-- [ ] Find GRUB theme
+- [x] Find GRUB theme
 - [ ] Change noctalia sounds
 - [x] Find cool pixel art wallpaper
 - [ ] Add Recyclarr
