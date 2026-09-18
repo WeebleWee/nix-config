@@ -6,7 +6,7 @@ My desktop configuration focused on making things personal and purple.
 
 ### To Do
 
-- [ ] Make gaming real
+- [x] Make gaming real
 - [x] Choose between Dolphin or Pcmanfm
 - [x] Find GRUB theme
 - [ ] Change noctalia sounds

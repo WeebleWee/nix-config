@@ -18,6 +18,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    play-nix.url = "github:TophC7/play.nix";
+
     umbriel.url = "git+https://github.com/noctalia-dev/umbriel";
 
     zen-browser = {
@@ -31,7 +33,9 @@
     {
       nixosConfigurations.VioletFlake = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
+        specialArgs = {
+          inputs = inputs // { inherit (inputs.play-nix.inputs) mix-nix; };
+          };
         modules = [
           ./hosts/VioletFlake
           ./modules/nixos/desktop.nix

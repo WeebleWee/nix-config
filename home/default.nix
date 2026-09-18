@@ -46,7 +46,6 @@
     nodejs_22
     luajit
     tor-browser
-    telegram-desktop
     filezilla
     qbittorrent
     fastfetch
@@ -58,14 +57,11 @@
     nixfmt
     kdePackages.dolphin
     kdePackages.ffmpegthumbs
-    protonup-ng
     yt-dlp
+    imagemagick
   ];
 
-  programs.zen-browser = {
-    enable = true;
-    setAsDefaultBrowser = true;
-  };
+  programs.zen-browser.enable = true;
 
   programs.home-manager.enable = true;
 }

@@ -16,20 +16,11 @@
   environment.systemPackages =
     (with pkgs; [
       git
-      curl
-      wget
       unzip
-      p7zip
-      file
-      tree
-      htop
       usbutils
       pciutils
       gcc
       gnumake
       go
-      python3
-      wineWow64Packages.stable # swap for .waylandFull if you want native Wayland wine
-      winetricks
     ]);
 }

@@ -66,6 +66,8 @@
     wireplumber.enable = true;
   };
 
+  services.udev.packages = [ pkgs.game-devices-udev-rules ];
+
   # Set once at install time and then leave alone forever.
   system.stateVersion = "26.05";
 }
