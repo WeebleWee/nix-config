@@ -100,7 +100,7 @@
         print -Pn -- '\e]2;%n@%m %~ %# ' && print -n -- "''${(q)1}\a"
       }
 
-      if [[ "$TERM_PROGRAM" == ghostty ]]; then
+      if [[ "$TERM" == xterm* || "$TERM_PROGRAM" == ghostty ]]; then
         add-zsh-hook -Uz precmd xterm_title_precmd
         add-zsh-hook -Uz preexec xterm_title_preexec
       fi

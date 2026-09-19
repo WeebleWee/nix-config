@@ -36,6 +36,11 @@ in
     "Mod+Shift+Down" = "window-move-to-output-left";
     "Mod+Alt+Up" = "column-move-left";
     "Mod+Alt+Down" = "column-move-right";
+    
+    "Mod+KP_1" = "workspace-switch:Web";
+    "Mod+KP_2" = "workspace-switch:Discord";
+    "Mod+KP_3" = "workspace-switch:Code";
+    "Mod+KP_4" = "workspace-switch:Gaming";
 
     "Mod+I" = "overview-toggle";
 
