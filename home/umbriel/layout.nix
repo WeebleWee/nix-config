@@ -22,7 +22,7 @@
         name = "Code";
         layout.mode = "master";
         layout.master.position = "left";
-        layout.master.default_width_fraction = 0.5;
+        layout.master.default_width_fraction = 0.666;
       }
     ];
   };

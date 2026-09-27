@@ -14,7 +14,7 @@ in
     "Mod+Shift+F" = "window-toggle-fullscreen";
 
     "Print" = {
-      action = "spawn:noctalia msg screenshot-region";
+      action = "spawn:noctalia msg screenshot-annotate";
       repeat = false;
     };
 
@@ -65,7 +65,7 @@ in
     };
 
     "Mod+R" = {
-      action = "spawn:${newsflash}";
+      action = "spawn:noctalia msg panel-toggle fel/radio:browser";
       repeat = false;
     };
 

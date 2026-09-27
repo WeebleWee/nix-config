@@ -59,6 +59,8 @@
     kdePackages.ffmpegthumbs
     yt-dlp
     imagemagick
+    tmux
+    image-roll
   ];
 
   programs.zen-browser.enable = true;

@@ -16,6 +16,7 @@ My desktop configuration focused on making things personal and purple.
 - [ ] Set more floating window rules
 - [x] New Fastfetch Theme
 - [x] Add imperative dotfiles
+- [ ] Fix comments
 
 ## Programs
 

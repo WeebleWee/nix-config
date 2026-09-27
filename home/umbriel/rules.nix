@@ -65,7 +65,7 @@
     }
 
     {
-      match.title = "^(Open File|Select|Choose a wallpaper|Open Folder|Save As|Library|Choose Where to Download|File Operation Progress|Rename|Copy Files|Move Files|Search Files|File Upload|Steam Settings|Controller Layout)$";
+      match.title = "^(Open File|Select|Choose a wallpaper|Open Folder|Save As|Library|Choose Where to Download|File Operation Progress|Rename|Copy Files|Move Files|Search Files|File Upload|Steam Settings|Controller Layout|Page Info)$";
       default_floating = true;
       default_floating_size_px = {
         width = 800;
@@ -77,14 +77,12 @@
       match.app_id = "\\.exe$";
       default_workspace = "Gaming";
       default_fullscreen = true;
-      vrr = "always";
     }
 
     {
       match.xdg_tag = "^proton-game$";
       default_workspace = "Gaming";
       default_fullscreen = true;
-      vrr = "always";
     }
 
   ];

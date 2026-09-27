@@ -16,7 +16,8 @@
   };
 
   "HDMI-A-1" = {
-    mode = "1920x1080@60";
+    mode = "1920x1080@120";
+    direct_scanout = false;
     scale = 1.0;
      workspaces = [
       "Web"
