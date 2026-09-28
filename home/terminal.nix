@@ -83,7 +83,6 @@
       ll = "eza --icons=always --color=always -lah";
       ls = "eza --icons=always --color=always -a";
       vim = "nvim";
-      radio = "sonicradio";
       rebuild = "nh os switch";
     };
 

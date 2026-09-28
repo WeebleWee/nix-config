@@ -19,6 +19,7 @@
     };
 
     play-nix.url = "github:TophC7/play.nix";
+    mix-nix.url = "github:TophC7/mix.nix";
 
     umbriel.url = "git+https://github.com/noctalia-dev/umbriel";
 
@@ -33,9 +34,7 @@
     {
       nixosConfigurations.VioletFlake = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = {
-          inputs = inputs // { inherit (inputs.play-nix.inputs) mix-nix; };
-          };
+        specialArgs = { inherit inputs; };
         modules = [
           ./hosts/VioletFlake
           ./modules/nixos/desktop.nix

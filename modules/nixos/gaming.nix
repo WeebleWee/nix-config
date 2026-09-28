@@ -14,7 +14,10 @@
 
   programs.gamemode.enable = true;
 
-  play.procon2.enable = true;
+  play.switch2Controllers = {
+    enable = true;
+    user = "weeble";
+  };
 
   environment.systemPackages = [
     pkgs.eden
