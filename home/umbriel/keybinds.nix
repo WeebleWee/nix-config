@@ -14,7 +14,7 @@ in
     "Mod+Shift+F" = "window-toggle-fullscreen";
 
     "Print" = {
-      action = "spawn:noctalia msg screenshot-annotate";
+      action = "spawn:noctalia msg screenshot-region";
       repeat = false;
     };
 
