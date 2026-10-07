@@ -4,6 +4,7 @@ let
   ghostty = "${pkgs.ghostty}/bin/ghostty";
   dolphin = "${pkgs.kdePackages.dolphin}/bin/dolphin";
   newsflash = "${pkgs.newsflash}/bin/newsflash";
+  zen = "zen-beta";
 in
 {
   programs.umbriel.settings.keybinds = {
@@ -36,7 +37,7 @@ in
     "Mod+Shift+Down" = "window-move-to-output-left";
     "Mod+Alt+Up" = "column-move-left";
     "Mod+Alt+Down" = "column-move-right";
-    
+
     "Mod+KP_1" = "workspace-switch:Web";
     "Mod+KP_2" = "workspace-switch:Discord";
     "Mod+KP_3" = "workspace-switch:Code";
@@ -66,6 +67,11 @@ in
 
     "Mod+R" = {
       action = "spawn:noctalia msg panel-toggle fel/radio:browser";
+      repeat = false;
+    };
+
+    "Mod+B" = {
+      action = "spawn:${zen}";
       repeat = false;
     };
 
@@ -131,7 +137,7 @@ in
       repeat = false;
     };
     "Mod+L" = {
-      action = "spawn:noctalia msg panel-toggle nightwatch75/todo:panel";
+      action = "spawn:noctalia msg panel-toggle baizhu/paged-todo:panel";
       repeat = false;
     };
     "Mod+Shift+Menu" = {
