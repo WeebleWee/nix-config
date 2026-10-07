@@ -43,6 +43,11 @@ in
     "Mod+KP_3" = "workspace-switch:Code";
     "Mod+KP_4" = "workspace-switch:Gaming";
 
+    "Mod+1" = "workspace-switch:Web";
+    "Mod+2" = "workspace-switch:Discord";
+    "Mod+3" = "workspace-switch:Code";
+    "Mod+4" = "workspace-switch:Gaming";
+
     "Mod+I" = "overview-toggle";
 
     # ─── Navigation: mouse ───────────────────────────────────────────────
