@@ -20,13 +20,11 @@
   };
 
   environment.systemPackages = [
-    pkgs.eden
-    pkgs.mgba
     pkgs.mangohud
-    pkgs.bubblewrap
     pkgs.fuse-overlayfs
     pkgs.wineWow64Packages.waylandFull
     pkgs.winetricks
     pkgs.protonup-qt
+    pkgs.vulkan-tools
    ];
 }

@@ -21,7 +21,7 @@
     play-nix.url = "github:TophC7/play.nix";
     mix-nix.url = "github:TophC7/mix.nix";
 
-    umbriel.url = "git+https://github.com/noctalia-dev/umbriel";
+    umbriel.url = "github:noctalia-dev/umbriel/cachix";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
