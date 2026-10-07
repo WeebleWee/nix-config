@@ -1,9 +1,7 @@
-{ ... }:
-
 {
   programs.umbriel.settings.input = {
     middle_click_paste = true;
-    client_window_drag = true;
+    client_window_drag = false;
 
     focus = {
       follows_mouse = true;
