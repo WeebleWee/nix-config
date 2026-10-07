@@ -31,7 +31,6 @@
 
     {
       match.app_id = "^vesktop$";
-      default_output = "DVI-D-1";
       default_workspace = "Discord";
     }
 
@@ -85,5 +84,10 @@
       default_fullscreen = true;
     }
 
+    {
+      match.app_id = "^steam_app_";
+      default_workspace = "Gaming";
+      default_fullscreen = true;
+    }
   ];
 }

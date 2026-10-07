@@ -49,6 +49,14 @@
     profiles.sharpening = {
       glsl-shader = "~~/shaders/adaptive-sharpen.glsl";
     };
+
+    profiles.hdr-passthrough = {
+      profile-cond = "p['video-params/gamma'] == 'pq' or p['video-params/gamma'] == 'hlg'";
+      profile-restore = "copy";
+      target-colorspace-hint = true;
+      target-peak = "auto";
+    };
+    
     defaultProfiles = [ "high-quality" ];
 
     bindings = {

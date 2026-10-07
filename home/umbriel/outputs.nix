@@ -2,9 +2,10 @@
 
 {
  programs.umbriel.settings.output = {
-  "DVI-D-1" = {
-    mode = "1920x1080@60";
+  "HDMI-A-1" = {
+    mode = "1920x1080@120";
     scale = 1.0;
+    vrr = "disabled";
     workspaces = [
       "Discord"
       "Code"
@@ -15,10 +16,12 @@
     ];
   };
 
-  "HDMI-A-1" = {
-    mode = "1920x1080@120";
-    direct_scanout = false;
+  "DP-3" = {
+    mode = "1920x1080@240";
     scale = 1.0;
+    vrr = "fullscreen";
+    hdr = "auto";
+    sdr_white = 203;
      workspaces = [
       "Web"
       "Gaming"
