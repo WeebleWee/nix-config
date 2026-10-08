@@ -89,5 +89,11 @@
       default_workspace = "Gaming";
       default_fullscreen = true;
     }
+
+    {
+      match.app_id = "codium";
+      default_workspace = "Code";
+      default_maximize = true;
+    }
   ];
 }
