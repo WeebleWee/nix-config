@@ -57,6 +57,7 @@
     nixfmt
     kdePackages.dolphin
     kdePackages.ffmpegthumbs
+    kdePackages.kdenlive
     yt-dlp
     imagemagick
     tmux

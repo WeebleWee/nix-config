@@ -21,6 +21,7 @@
 
   environment.systemPackages = [
     pkgs.mangohud
+    pkgs.steam-run
     pkgs.fuse-overlayfs
     pkgs.wineWow64Packages.waylandFull
     pkgs.winetricks

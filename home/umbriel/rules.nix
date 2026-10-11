@@ -95,5 +95,10 @@
       default_workspace = "Code";
       default_maximize = true;
     }
+
+    {
+      match.app_id = "openfusionlauncher|steam_proton";
+      default_workspace = "Gaming";
+    }
   ];
 }

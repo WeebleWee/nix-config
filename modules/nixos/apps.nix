@@ -22,5 +22,6 @@
       gcc
       gnumake
       go
+      python3
     ]);
 }
