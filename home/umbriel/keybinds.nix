@@ -27,8 +27,8 @@ in
     # ─── Navigation: keyboard ────────────────────────────────────────────
     "Mod+Up" = "workspace-previous";
     "Mod+Down" = "workspace-next";
-    "Mod+Left" = "window-focus-left";
-    "Mod+Right" = "window-focus-right";
+    "Mod+Left" = "window-focus-or-output-left";
+    "Mod+Right" = "window-focus-or-output-right";
 
     "Mod+Prior" = "workspace-previous";
     "Mod+Next" = "workspace-next";
