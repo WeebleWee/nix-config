@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs,  ... }:
 
 {
   #--------------- gtk and pc stuff---
