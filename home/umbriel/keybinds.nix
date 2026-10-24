@@ -50,6 +50,7 @@ in
 
     "Mod+I" = "overview-toggle";
 
+    "Alt+Tab" = "spawn:noctalia msg window-switcher hold";
     # ─── Navigation: mouse ───────────────────────────────────────────────
     "Mod+WheelDown" = "window-focus-right";
     "Mod+WheelUp" = "window-focus-left";

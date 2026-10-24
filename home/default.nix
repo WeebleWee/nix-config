@@ -55,6 +55,7 @@
     ffmpeg
     exiftool
     nixfmt
+    nixd
     kdePackages.dolphin
     kdePackages.ffmpegthumbs
     kdePackages.kdenlive
@@ -62,6 +63,8 @@
     imagemagick
     tmux
     image-roll
+    plezy
+    vivaldi
   ];
 
   programs.zen-browser.enable = true;
