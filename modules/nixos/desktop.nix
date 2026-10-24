@@ -29,7 +29,7 @@
     grim
     slurp
     glib
-    xarchiver
+    file-roller
     gpu-screen-recorder
     bc
     hyprpicker
