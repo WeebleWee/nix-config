@@ -150,5 +150,4 @@ GRUB theme: [Hyperfluent](https://github.com/Coopydood/HyperFluent-GRUB-Theme)
 </details>
 
 ## Notes
-
-This is mostly a mix of copying, following docs, and AI checks. Not meant to be used by others.
+I copied a lot from Lysec/Vimjoyer and had AI troubleshoot some errors. This is essentially my glorified dotfiles
