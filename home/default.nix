@@ -65,6 +65,8 @@
     image-roll
     plezy
     vivaldi
+    libreoffice
+    desktop-file-utils
   ];
 
   programs.zen-browser.enable = true;
