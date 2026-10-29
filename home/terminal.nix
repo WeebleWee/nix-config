@@ -160,13 +160,13 @@
         DIM=$'%{\e[2m%}%F{4}'
         UNDIM=$'%{\e[22m%}%f'
 
-        dir_icon() {
-          if [[ $PWD == $HOME ]]; then
-            print -rn -- '%B%F{blue}󰋜%f%b'
-          else
-            print -rn -- '%B%F{blue}󰣇%f%b'
-          fi
-        }
+      dir_icon() {
+        if [[ $PWD == $HOME ]]; then
+          print -rn -- '%B%F{blue}󰋜%f%b'
+        else
+          print -rn -- '%B%F{blue}󰣇%f%b'
+        fi
+      }
 
         TIME="''${DIM}[''${UNDIM}%F{cyan}%B%T%b''${DIM}]''${UNDIM}"
         NICK="''${DIM}[''${UNDIM}%F{cyan}%BWeeble@VioletFlake%b''${DIM}]''${UNDIM}"
