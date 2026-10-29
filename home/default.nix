@@ -26,7 +26,6 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
-    BAT_THEME = "base16";
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     SUDO_PROMPT = "This needs root priveleges. What's the magic word uwu? ";
     HISTORY_IGNORE = "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)";
