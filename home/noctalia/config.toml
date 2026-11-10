@@ -1,9 +1,7 @@
 [audio]
 enable_overdrive = true
 enable_sounds = true
-notification_sound = "/home/weeble/Music/noctalia/notification.wav"
 sound_volume = 0.84999998100101948
-volume_change_sound = "/home/weeble/Music/noctalia/volume.wav"
 
 [backdrop]
 blur_intensity = 0.029999999329447746
@@ -48,7 +46,7 @@ order = [ "default", "VioletArch" ]
     [bar.default]
     background_opacity = 0.84999998100101948
     capsule = true
-    capsule_fill = "outline"
+    capsule_fill = "outline_variant"
     capsule_radius = 8
     center = [ "taskbar" ]
     concave_edge_corners = false
@@ -67,7 +65,7 @@ order = [ "default", "VioletArch" ]
 
         [[bar.default.capsule_group]]
         enabled = true
-        fill = "outline"
+        fill = "outline_variant"
         id = "g1"
         members = [ "cpu", "ram" ]
         opacity = 1.0
@@ -350,13 +348,12 @@ enabled = [
 
 [shell]
 app_icon_color = "primary"
-app_icon_colorize = true
+colorize_icons = true
 avatar_path = "/home/weeble/Pictures/sugu.jpg"
 clipboard_keep_from_closed_apps = false
 corner_radius_scale = 0.0
 date_format = "%A, %B %e %Y"
 font_family = "CozetteVector"
-niri_overview_type_to_launch_enabled = true
 password_style = "random"
 polkit_agent = true
 screen_time_enabled = true
@@ -561,7 +558,7 @@ type = "custom_button"
 [widget.audio_visualizer]
 anchor = false
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 capsule_padding = 10.0
 color_1 = "on_surface"
 color_2 = "on_surface"
@@ -570,7 +567,7 @@ show_when_idle = true
 
 [widget.brightness]
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 show_label = false
 
 [widget.calendar_icon]
@@ -582,10 +579,10 @@ type = "custom_button"
 
 [widget.clipboard]
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 
 [widget.clock]
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 capsule_padding = 6.0
 capsule_radius = 5
 font_family = "CozetteVector"
@@ -604,12 +601,12 @@ type = "custom_button"
 
 [widget.control-center]
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 glyph = "bat"
 
 [widget.cpu]
 capsule = false
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 font_family = "CozetteVector"
 highlight_color = "error"
 show_glyph = false
@@ -647,16 +644,16 @@ title_scroll = "on_hover"
 
 [widget.network]
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 show_label = false
 
 [widget.notifications]
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 
 [widget.ram]
 capsule = false
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 font_family = "CozetteVector"
 highlight_color = "on_surface"
 show_glyph = false
@@ -677,16 +674,11 @@ type = "custom_button"
 
 [widget.screenshot]
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 
 [widget.session]
 capsule = true
-capsule_fill = "outline"
-
-[widget.status_3]
-streaming_color = "primary"
-transcribing_color = "secondary"
-type = "gabedunn/voxtype:status"
+capsule_fill = "outline_variant"
 
 [widget.sysmon]
 custom_image = " "
@@ -721,7 +713,7 @@ drawer = true
 [widget.volume]
 anchor = false
 capsule = true
-capsule_fill = "outline"
+capsule_fill = "outline_variant"
 show_label = false
 
 [widget.widget]
