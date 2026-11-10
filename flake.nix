@@ -4,6 +4,13 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
+    cressida.url = "github:Ly-sec/Cressida";
+
+    helium = {
+      url = "github:schembriaiden/helium-browser-nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,8 +25,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    play-nix.url = "github:TophC7/play.nix";
-    mix-nix.url = "github:TophC7/mix.nix";
+    yapfast = {
+      url = "github:yapfast/yapfast";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    strata.url = "github:lgse/strata";
 
     umbriel.url = "github:noctalia-dev/umbriel/cachix";
 
@@ -33,7 +44,6 @@
     inputs@{ self, nixpkgs, ... }:
     {
       nixosConfigurations.VioletFlake = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
           ./hosts/VioletFlake

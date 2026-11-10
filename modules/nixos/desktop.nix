@@ -29,7 +29,6 @@
     grim
     slurp
     glib
-    file-roller
     gpu-screen-recorder
     bc
     hyprpicker

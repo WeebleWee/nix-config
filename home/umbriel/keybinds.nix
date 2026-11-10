@@ -1,11 +1,5 @@
-{ pkgs, lib, ... }:
+{ ... }:
 
-let
-  ghostty = "${pkgs.ghostty}/bin/ghostty";
-  dolphin = "${pkgs.kdePackages.dolphin}/bin/dolphin";
-  newsflash = "${pkgs.newsflash}/bin/newsflash";
-  zen = "zen-beta";
-in
 {
   programs.umbriel.settings.keybinds = {
     # ─── Basics ──────────────────────────────────────────────────────────
@@ -15,12 +9,12 @@ in
     "Mod+Shift+F" = "window-toggle-fullscreen";
 
     "Print" = {
-      action = "spawn:noctalia msg screenshot-region";
+      action = "spawn noctalia msg screenshot-region";
       repeat = false;
     };
 
     "Mod+Print" = {
-      action = "spawn:noctalia msg screenshot-fullscreen";
+      action = "spawn noctalia msg screenshot-fullscreen";
       repeat = false;
     };
 
@@ -38,122 +32,122 @@ in
     "Mod+Alt+Up" = "column-move-left";
     "Mod+Alt+Down" = "column-move-right";
 
-    "Mod+KP_1" = "workspace-switch:Web";
-    "Mod+KP_2" = "workspace-switch:Discord";
-    "Mod+KP_3" = "workspace-switch:Code";
-    "Mod+KP_4" = "workspace-switch:Gaming";
+    "Mod+KP_1" = "workspace-switch Web";
+    "Mod+KP_2" = "workspace-switch Discord";
+    "Mod+KP_3" = "workspace-switch Code";
+    "Mod+KP_4" = "workspace-switch Gaming";
 
-    "Mod+1" = "workspace-switch:Web";
-    "Mod+2" = "workspace-switch:Discord";
-    "Mod+3" = "workspace-switch:Code";
-    "Mod+4" = "workspace-switch:Gaming";
+    "Mod+1" = "workspace-switch Web";
+    "Mod+2" = "workspace-switch Discord";
+    "Mod+3" = "workspace-switch Code";
+    "Mod+4" = "workspace-switch Gaming";
 
     "Mod+I" = "overview-toggle";
 
-    "Alt+Tab" = "spawn:noctalia msg window-switcher hold";
+    "Alt+Tab" = "spawn noctalia msg window-switcher hold";
     # ─── Navigation: mouse ───────────────────────────────────────────────
     "Mod+WheelDown" = "window-focus-right";
     "Mod+WheelUp" = "window-focus-left";
 
     # ─── Apps ────────────────────────────────────────────────────────────
     "Mod+Return" = {
-      action = "spawn:${ghostty}";
+      action = "spawn ghostty";
       repeat = false;
     };
 
     "Mod+F" = {
-      action = "spawn:${dolphin}";
+      action = "spawn strata";
       repeat = false;
     };
 
     "Mod+A" = {
-      action = "spawn:noctalia msg panel-toggle yuuto/calculator:panel";
+      action = "spawn noctalia msg panel-toggle yuuto/calculator:panel";
       repeat = false;
     };
 
     "Mod+R" = {
-      action = "spawn:noctalia msg panel-toggle fel/radio:browser";
+      action = "spawn noctalia msg panel-toggle fel/radio:browser";
       repeat = false;
     };
 
     "Mod+B" = {
-      action = "spawn:${zen}";
+      action = "spawn zen-beta";
       repeat = false;
     };
 
     # ─── Noctalia core ───────────────────────────────────────────────────
     "Mod" = {
-      action = "spawn:noctalia msg panel-toggle launcher";
+      action = "spawn noctalia msg panel-toggle launcher";
       repeat = false;
     };
     "Mod+C" = {
-      action = "spawn:noctalia msg panel-toggle control-center";
+      action = "spawn noctalia msg panel-toggle control-center";
       repeat = false;
     };
     "Mod+Shift+R" = {
-      action = "spawn:noctalia msg config-reload";
+      action = "spawn noctalia msg config-reload";
       repeat = false;
     };
     "Mod+S" = {
-      action = "spawn:noctalia msg settings-toggle";
+      action = "spawn noctalia msg settings-toggle";
       repeat = false;
     };
     "Mod+Menu" = {
-      action = "spawn:noctalia msg panel-toggle wallpaper";
+      action = "spawn noctalia msg panel-toggle wallpaper";
       repeat = false;
     };
     "Ctrl+Alt+Delete" = {
-      action = "spawn:noctalia msg panel-toggle session";
+      action = "spawn noctalia msg panel-toggle session";
       repeat = false;
     };
 
     # ─── Audio ───────────────────────────────────────────────────────────
-    "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up";
-    "XF86AudioLowerVolume" = "spawn:noctalia msg volume-down";
+    "XF86AudioRaiseVolume" = "spawn noctalia msg volume-up";
+    "XF86AudioLowerVolume" = "spawn noctalia msg volume-down";
     "XF86AudioMute" = {
-      action = "spawn:noctalia msg volume-mute";
+      action = "spawn noctalia msg volume-mute";
       repeat = false;
     };
 
     # ─── Media ───────────────────────────────────────────────────────────
     "F5" = {
-      action = "spawn:noctalia msg media stop";
+      action = "spawn noctalia msg media stop";
       repeat = false;
     };
     "F6" = {
-      action = "spawn:noctalia msg media previous";
+      action = "spawn noctalia msg media previous";
       repeat = false;
     };
     "F7" = {
-      action = "spawn:noctalia msg media toggle";
+      action = "spawn noctalia msg media toggle";
       repeat = false;
     };
     "F8" = {
-      action = "spawn:noctalia msg media next";
+      action = "spawn noctalia msg media next";
       repeat = false;
     };
 
     # ─── Plugins ─────────────────────────────────────────────────────────
     "Mod+T" = {
-      action = "spawn:noctalia msg panel-toggle thepunkoff/pomodoro:panel";
+      action = "spawn noctalia msg panel-toggle thepunkoff/pomodoro:panel";
       repeat = false;
     };
     "Mod+N" = {
-      action = "spawn:noctalia msg panel-toggle noctalia/notes:panel";
+      action = "spawn noctalia msg panel-toggle noctalia/notes:panel";
       repeat = false;
     };
     "Mod+L" = {
-      action = "spawn:noctalia msg panel-toggle baizhu/paged-todo:panel";
+      action = "spawn noctalia msg panel-toggle baizhu/paged-todo:panel";
       repeat = false;
     };
     "Mod+Shift+Menu" = {
-      action = "spawn:noctalia msg panel-toggle noctalia/wallhaven:browser";
+      action = "spawn noctalia msg panel-toggle noctalia/wallhaven:browser";
       repeat = false;
     };
 
     # ─── Clipboard / misc ────────────────────────────────────────────────
     "Mod+Shift+V" = {
-      action = "spawn:noctalia msg panel-toggle clipboard";
+      action = "spawn noctalia msg panel-toggle clipboard";
       repeat = false;
     };
 

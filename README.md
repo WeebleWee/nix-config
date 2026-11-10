@@ -26,7 +26,7 @@ My desktop configuration focused on making things personal and purple.
 | Terminal        | Ghostty         |
 | Shell           | zsh             |
 | Fetch           | Fastfetch       |
-| File Manager    | Dolphin         |
+| File Manager    | Strata          |
 | Editor          | Neovim/VScodium |
 | Browser         | zen-browser     |
 
@@ -73,7 +73,7 @@ I also got programs like btop and cava for extra pretty points uwu
 | Keybind          | Action                        |
 | ---------------- | ----------------------------- |
 | `Mod` + `Return` | Launch Ghostty (terminal)     |
-| `Mod` + `F`      | Launch Dolphin (file manager) |
+| `Mod` + `F`      | Launch Strata (file manager) |
 | `Mod` + `R`      | Launch NewsFlash (RSS reader) |
 | `Mod` + `A`      | Toggle calculator panel       |
 

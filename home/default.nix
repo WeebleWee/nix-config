@@ -4,10 +4,12 @@
   imports = [
     inputs.zen-browser.homeModules.default
     ./terminal.nix
+    ./desktop-entries.nix
     ./git.nix
     ./gitea-runner.nix
     ./ssh.nix
     ./theming.nix
+    ./mimelist.nix
     ./monitoring.nix
     ./mpv.nix
     ./obs.nix
@@ -34,6 +36,7 @@
 
   home.packages = with pkgs; [
     obsidian
+    inputs.helium.packages.${pkgs.system}.default
     freetube
     rsync
     bun
@@ -55,17 +58,17 @@
     exiftool
     nixfmt
     nixd
-    kdePackages.dolphin
-    kdePackages.ffmpegthumbs
     kdePackages.kdenlive
     yt-dlp
     imagemagick
     tmux
-    image-roll
+    loupe
     plezy
-    vivaldi
     libreoffice
     desktop-file-utils
+    inputs.cressida.packages.${pkgs.stdenv.hostPlatform.system}.default
+    ente-auth
+    tutanota-desktop
   ];
 
   programs.zen-browser.enable = true;

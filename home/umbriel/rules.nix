@@ -73,9 +73,9 @@
     }
 
     {
-      match.app_id = "\\.exe$";
-      default_workspace = "Gaming";
-      default_fullscreen = true;
+      match.app_id = "^scrivener\\.exe$";
+      default_workspace = "Code";
+      default_fullscreen = false;
     }
 
     {
