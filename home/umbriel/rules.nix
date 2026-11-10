@@ -75,7 +75,7 @@
     {
       match.app_id = "^scrivener\\.exe$";
       default_workspace = "Code";
-      default_fullscreen = false;
+      default_maximize = true;
     }
 
     {
