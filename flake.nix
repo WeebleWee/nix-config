@@ -24,13 +24,13 @@
       url = "github:noctalia-dev/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+ 
+    yapfast.url = "github:yapfast/yapfast";
 
-    yapfast = {
-      url = "github:yapfast/yapfast";
+    rummage = {
+      url = "github:barrulus/rummage"
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    strata.url = "github:lgse/strata";
+    }
 
     umbriel.url = "github:noctalia-dev/umbriel/cachix";
 

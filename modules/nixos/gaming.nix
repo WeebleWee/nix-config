@@ -2,11 +2,11 @@
 
 {
 
-  nixpkgs.overlays = [ inputs.millennium.overlays.default ];
+  #nixpkgs.overlays = [ inputs.millennium.overlays.default ];
 
   programs.steam = {
     enable = true;
-    package = pkgs.millennium-steam;
+    #package = pkgs.millennium-steam;
     gamescopeSession.enable = true;
   };
 
@@ -14,7 +14,6 @@
 
   environment.systemPackages = [
     pkgs.mangohud
-    pkgs.steam-run
     pkgs.fuse-overlayfs
     pkgs.wineWow64Packages.staging
     pkgs.winetricks

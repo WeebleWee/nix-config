@@ -4,7 +4,6 @@
   imports = [
     inputs.zen-browser.homeModules.default
     ./terminal.nix
-    ./desktop-entries.nix
     ./git.nix
     ./gitea-runner.nix
     ./ssh.nix
@@ -53,19 +52,18 @@
     fastfetch
     vesktop
     vscodium
-    newsflash
-    ffmpeg
+    (newsflash.overrideAttrs (old: {
+      buildInputs = (old.buildInputs or [ ]) ++ [ aws-lc ];
+    }))
     exiftool
     nixfmt
     nixd
     kdePackages.kdenlive
     yt-dlp
     imagemagick
-    tmux
     loupe
     plezy
     libreoffice
-    desktop-file-utils
     inputs.cressida.packages.${pkgs.stdenv.hostPlatform.system}.default
     ente-auth
     tutanota-desktop

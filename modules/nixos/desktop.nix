@@ -5,6 +5,7 @@
     inputs.noctalia.nixosModules.default
     inputs.noctalia-greeter.nixosModules.default
     inputs.umbriel.nixosModules.default
+    inputs.rummage.nixosModules.default
   ];
 
   # ------------------------------------------------------- Noctalia v5 ---
@@ -32,8 +33,17 @@
     gpu-screen-recorder
     bc
     hyprpicker
+    desktop-file-utils
+    inputs.rummage.packages.${pkgs.stdenv.hostPlatform.system}.rummage-with-media
   ];
 
+  # ---------------------------------------------------------- Rummage ---
+  programs.rummage.enable = true;
+
+  programs.rummage.filePicker.enable = true;
+
+  services.gvfs.enable = true; # trash, mtp, network mounts
+  services.udisks2.enable = true; # removable media
   # ------------------------------------------------------------ login ---
   services.displayManager.noctalia-greeter = {
     enable = true;

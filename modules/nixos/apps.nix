@@ -1,10 +1,6 @@
 { pkgs, inputs, ... }:
 
 {
-  #--------------- gtk and pc stuff---
-  services.gvfs.enable = true; # trash, mtp, network mounts
-  services.udisks2.enable = true; # removable media
-
   # --- OBS virtual camera -------------------------------------
   # boot.extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
   # boot.kernelModules = [ "v4l2loopback" ];
@@ -20,7 +16,7 @@
 
   programs.appimage = {
     enable = true;
-    binfmt = true;
+    binfmt = false;
     package = pkgs.appimage-run.override {
       extraPkgs =
         pkgs: with pkgs; [
@@ -46,6 +42,8 @@
       python3
       file
       glib
+      ffmpeg
+      tmux
       localsend
       inputs.yapfast.packages.${pkgs.stdenv.hostPlatform.system}.default
     ]
