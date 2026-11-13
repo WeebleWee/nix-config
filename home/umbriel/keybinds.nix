@@ -56,7 +56,7 @@
     };
 
     "Mod+F" = {
-      action = "spawn strata";
+      action = "spawn rummage";
       repeat = false;
     };
 
