@@ -30,7 +30,7 @@
     rummage = {
       url = "github:barrulus/rummage";
       inputs.nixpkgs.follows = "nixpkgs";
-    }
+    };
 
     umbriel.url = "github:noctalia-dev/umbriel/cachix";
 
