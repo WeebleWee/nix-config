@@ -45,6 +45,7 @@
       ffmpeg
       tmux
       localsend
+      _7zz-rar
       inputs.yapfast.packages.${pkgs.stdenv.hostPlatform.system}.default
     ]
   );
