@@ -269,11 +269,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1795195686,
-        "narHash": "sha256-MIMarCxnBSs+e3sCU29oB4ey1uFkhe/FG/wMCsRTM2c=",
+        "lastModified": 1795264973,
+        "narHash": "sha256-3MJ0pvNv1bvqzHEJAibHX3LlJnNa1Epm0jvuZ5lM0u4=",
         "owner": "barrulus",
         "repo": "rummage",
-        "rev": "6a9bcecc4928ba5f2d71e6fa666c9db69b891efc",
+        "rev": "1b4a091f982f80354225f172df59d1bc04d371ee",
         "type": "github"
       },
       "original": {
