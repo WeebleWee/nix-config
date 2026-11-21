@@ -45,9 +45,11 @@
     "Mod+I" = "overview-toggle";
 
     "Alt+Tab" = "spawn noctalia msg window-switcher hold";
-    # ─── Navigation: mouse ───────────────────────────────────────────────
+
     "Mod+WheelDown" = "window-focus-right";
     "Mod+WheelUp" = "window-focus-left";
+    "Mod+MouseForward" = "workspace-previous";
+    "Mod+MouseBack" = "workspace-next";
 
     # ─── Apps ────────────────────────────────────────────────────────────
     "Mod+Return" = {

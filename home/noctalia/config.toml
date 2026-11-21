@@ -434,10 +434,6 @@ wallpaper_scheme = "m3-content"
         output_path = "$XDG_CONFIG_HOME/nvim/lua/matugen.lua"
         post_hook = 'pkill -SIGUSR1 nvim'
 
-        [theme.templates.user.rummage]
-        input_path = "$XDG_CONFIG_HOME/noctalia/templates/rummage.conf"
-        output_path = "$XDG_CONFIG_HOME/rummage/colors.toml"
-
 [wallpaper]
 directory = "/home/weeble/Pictures/Wallpapers"
 fill_mode = "stretch"

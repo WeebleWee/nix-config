@@ -1,10 +1,19 @@
 {
-  description = "VioletFlake: Umbriel + Noctalia v5";
+  description = "VioletFlake: A Purple Pixelated Wayland Desktop";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    cressida.url = "github:Ly-sec/Cressida";
+    noctalia.url = "github:noctalia-dev/noctalia/cachix";
+
+    rummage.url = "github:barrulus/rummage";
+
+    umbriel.url = "github:noctalia-dev/umbriel/cachix";
+
+    cressida = {
+      url = "github:Ly-sec/Cressida";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     helium = {
       url = "github:schembriaiden/helium-browser-nix-flake";
@@ -16,23 +25,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-
-    noctalia.url = "github:noctalia-dev/noctalia/cachix";
+    millennium = {
+      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     noctalia-greeter = {
       url = "github:noctalia-dev/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    yapfast.url = "github:yapfast/yapfast";
-
-    rummage = {
-      url = "github:barrulus/rummage";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    umbriel.url = "github:noctalia-dev/umbriel/cachix";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";

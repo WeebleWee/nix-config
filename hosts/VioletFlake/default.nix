@@ -26,15 +26,18 @@
       "nix-command"
       "flakes"
     ];
-    # Prebuilt Noctalia and umbriel binaries
+    
     extra-substituters = [
       "https://noctalia.cachix.org"
       "https://umbriel.cachix.org"
+      "https://rummage-fm.cachix.org"
       ];
     extra-trusted-public-keys = [
       "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
       "umbriel.cachix.org-1:JfNq/2yg2S6D6z4Z2dVSZrZlDPQTKtexB6GAVLD98nw="
+      "rummage-fm.cachix.org-1:fhPhaCttVfPBS/i//+Z+6Ch0xdxj9g94eZdQ5m6mlwA="
     ];
+
   };
 
   nixpkgs.hostPlatform = "x86_64-linux";

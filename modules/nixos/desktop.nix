@@ -21,8 +21,9 @@
   # ---------------------------------------------------------- Relevant packages ---
 
   environment.systemPackages = with pkgs; [
-    papirus-icon-theme
     adwaita-icon-theme
+    (pkgs.callPackage ./pixora.nix { })
+    (pkgs.callPackage ./pixelitos.nix { })
     qt6Packages.qt6ct
     brightnessctl
     playerctl
@@ -34,20 +35,22 @@
     bc
     hyprpicker
     desktop-file-utils
-    inputs.rummage.packages.${pkgs.stdenv.hostPlatform.system}.rummage-with-media
   ];
 
   # ---------------------------------------------------------- Rummage ---
-  programs.rummage.enable = true;
-
-  programs.rummage.filePicker.enable = true;
+  programs.rummage = {
+    enable = true;
+    preview = {
+      thumbnails = true;
+      pdf = true;
+    };
+  };
 
   services.gvfs.enable = true; # trash, mtp, network mounts
   services.udisks2.enable = true; # removable media
   # ------------------------------------------------------------ login ---
   services.displayManager.noctalia-greeter = {
     enable = true;
-
     settings = {
       session.default = "Umbriel";
     };

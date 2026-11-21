@@ -16,6 +16,7 @@
       ];
       "org.freedesktop.impl.portal.ScreenCast" = [ "umbriel" ];
       "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
+      "org.freedesktop.impl.portal.FileChooser" = [ "rummage" ];
     };
   };
 

@@ -24,7 +24,7 @@
     client_window_drag = false;
 
     focus = {
-      follows_mouse = true;
+      follows_mouse = "sloppy";
       follows_mouse_max_scroll = 0.0;
     };
 

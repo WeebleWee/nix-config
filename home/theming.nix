@@ -31,7 +31,7 @@
       package = pkgs.adw-gtk3;
     };
 
-    iconTheme.name = "pixora-dark";
+    iconTheme.name = "pixora-accent";
 
     font = {
       name = "CozetteVector";
@@ -41,7 +41,7 @@
     gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
   };
- 
+
   gtk.cursorTheme = {
     name = "retrosmart-xcursor-win-ish-violet-shadow";
     size = 32;

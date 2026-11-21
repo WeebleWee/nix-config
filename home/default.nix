@@ -67,6 +67,11 @@
     inputs.cressida.packages.${pkgs.stdenv.hostPlatform.system}.default
     ente-auth
     tutanota-desktop
+    (pkgs.voxtype.overrideAttrs (old: {
+      buildInputs = (old.buildInputs or [ ]) ++ [ pkgs.sqlite ];
+    }))
+    wtype
+    dotool
   ];
 
   programs.zen-browser.enable = true;
