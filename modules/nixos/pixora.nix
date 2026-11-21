@@ -46,7 +46,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
     idx="$out/share/icons/pixora-accent/index.theme"
     [ -f "$idx" ] || { echo "pixora-accent not found, installed themes:"; ls $out/share/icons; exit 1; }
-    sed -i 's/^Inherits=.*/Inherits=pixora,pixelitos-dark,breeze,hicolor/' "$idx"
+    sed -i 's/^Inherits=.*/Inherits=pixora-dark,pixelitos-dark/' "$idx"
     
     runHook postInstall
   '';
